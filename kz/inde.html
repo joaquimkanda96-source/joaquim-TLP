@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME - Trabalhos de Programação</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #d1143d;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    .header {
+      position: sticky;
+      top: 0;
+      background: #1e293b;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    /* CONTEÚDO */
+    main {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sobre {
+      width: 100%;
+      max-width: 600px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .sobre h1 {
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    .sobre p {
+      line-height: 1.6;
+      color: #1e293b;
+    }
+
+    /* RODAPÉ */
+    .rodape {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .rodape h3 {
+      margin-bottom: 15px;
+    }
+
+    .links-rodape {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .links-rodape a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #000;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .links-rodape a:hover {
+      background: white;
+      color: #1e293b;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 20px;
+      }
+
+      .links-rodape {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1><a href="inde.html">HOME</a></h1>
+</header>
+
+<main>
+  <div class="sobre">
+    <h1>  SEJA BEM-VINDO </h1>
+
+    <p>
+      <strong>Nome:</strong> JOAQUIM CANDA <br>
+      <strong>Nº:</strong> 18<br>
+      <strong>Sala:</strong> 18 <br>
+      <strong>Turma:</strong> BNI12° <br>
+      <strong>Turno:</strong> noite <br>
+      <strong>Classe:</strong> 12ª
+    </p>
+  </div>
+</main>
+
+<footer class="rodape">
+  <h3>Trimestres</h3>
+
+  <div class="links-rodape">
+    <a href="trimestre1.html">I</a>
+    <a href="trimestre2.html">II</a>
+    <a href="trimestre3.html">III</a>
+  </div>
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Trimestre</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #e00a0a;
+    }
+
+    
+    .header {
+      position: sticky;
+      top: 0;
+      background: #ee0c0c;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #fc0814;
+      color: #e4dede;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+  
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #0f172a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1><a href="inde.html">HOME</a></h1>
+
+  <nav>
+    <a href="trimestre1.html">I</a>
+    <a href="trimestre2.html">II</a>
+    <a href="trimestre3.html">III</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Cadastro de Produtos</h2>
+
+  <form id="formProduto">
+    <label>Nome do Produto</label>
+    <input type="text" id="nome" required>
+
+    <label>Preço</label>
+    <input type="number" id="preco" required>
+
+    <label>Quantidade</label>
+    <input type="number" id="quantidade" required>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById("formProduto");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+    const preco = document.getElementById("preco").value;
+    const quantidade = document.getElementById("quantidade").value;
+
+    const produto = { nome, preco, quantidade };
+
+    let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+    produtos.push(produto);
+    localStorage.setItem("produtos", JSON.stringify(produtos));
+
+    alert("Produto cadastrado com sucesso!");
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
+</html>
+   
