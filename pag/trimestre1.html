@@ -1,120 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Trimestre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Trimestre</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<style>
 
-    body {
-      background: #f1f5f9;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
 
-    
-    .header {
-      position: sticky;
-      top: 0;
-      background: #0f172a;
-      padding: 15px 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+body{
+background:#dbeafe; /* NOVA COR DO FUNDO */
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
 
-    .header h1 a {
-      color: #fff;
-      text-decoration: none;
-    }
+/* HEADER */
 
-    nav {
-      display: flex;
-      gap: 10px;
-    }
+.header{
+position:sticky;
+top:0;
+background:#1e3a8a;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-    nav a {
-      text-decoration: none;
-      padding: 8px 16px;
-      background: #1e293b;
-      color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-    }
+.header h1 a{
+color:#fff;
+text-decoration:none;
+}
 
-  
-    main {
-      padding: 40px;
-    }
+/* MAIN */
 
-    .trimestre-box {
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+main{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
 
-    .trimestre-box h2 {
-      margin-bottom: 25px;
-      color: #0f172a;
-    }
+/* BOX */
 
-  
-    .trabalhos {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+.trimestre-box{
+background:#fff;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
 
-    .trabalhos a {
-      padding: 15px 20px;
-      background: #0f172a;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
+.trimestre-box h2{
+margin-bottom:25px;
+color:#1e3a8a;
+}
 
-    .trabalhos a:hover {
-      background: #38bdf8;
-      color: #000;
-    }
-  </style>
+/* TRABALHOS */
+
+.trabalhos{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center; /* CENTRALIZA T1 T2 T3 */
+}
+
+.trabalhos a{
+padding:15px 20px;
+background:#1e3a8a;
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+transition:0.3s;
+}
+
+.trabalhos a:hover{
+background:#60a5fa;
+color:#000;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+padding:20px;
+text-align:center;
+}
+
+footer a{
+text-decoration:none;
+padding:10px 18px;
+background:#1e3a8a;
+color:white;
+border-radius:6px;
+margin:5px;
+display:inline-block;
+font-weight:bold;
+}
+
+footer a:hover{
+background:#60a5fa;
+color:black;
+}
+
+</style>
 </head>
 
 <body>
 
 <header class="header">
-  <h1><a href="../index.html">HOME</a></h1>
-
-  <nav>
-    <a href="trimestre1.html">I</a>
-    <a href="trimestre2.html">II</a>
-    <a href="trimestre3.html">III</a>
-  </nav>
+<h1><a href="../index.html">HOME</a></h1>
 </header>
 
 <main>
-  <div class="trimestre-box">
-    <h2>I Trimestre</h2>
 
-    <div class="trabalhos">
-      <a href="t1.html">T1</a>
-      <a href="t2.html">T2</a>
-      <a href="t3.html">T3</a>
-      <a href="t4.html">T4</a>
-      <a href="t5.html">T5</a>
-      <a href="t6.html">T6</a>
-    </div>
-  </div>
+<div class="trimestre-box">
+
+<h2>I Trimestre</h2>
+
+<div class="trabalhos">
+
+<a href="t1.html">T1</a>
+<a href="t2.html">T2</a>
+<a href="t3.html">T3</a>
+<a href="t4.html">T4</a>
+<a href="t5.html">T5</a>
+<a href="t6.html">T6</a>
+
+</div>
+
+</div>
+
 </main>
 
-</body>
+<footer>
 
+<a href="trimestre1.html">I</a>
+<a href="trimestre2.html">II</a>
+<a href="trimestre3.html">III</a>
+
+</footer>
+
+</body>
 </html>
