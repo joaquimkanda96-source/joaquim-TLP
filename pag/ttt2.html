@@ -21,7 +21,7 @@
       min-height: 100vh;
     }
 
-    /* HEADER */
+    /* CABEÇALHO */
     .header {
       position: sticky;
       top: 0;
@@ -37,33 +37,12 @@
       text-decoration: none;
     }
 
-    nav a {
-      text-decoration: none;
-      padding: 8px 16px;
-      background: #1e293b;
-      color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-left: 5px;
-    }
-
-    nav a:hover {
-      background: #38bdf8;
-      color: black;
-    }
-
-    /* CONTEÚDO PRINCIPAL */
-    main {
-      flex: 1;
-      padding: 50px 25px;
-      text-align: center;
-    }
-
     /* RODAPÉ COM TRIMESTRES */
     footer {
       background: #0f172a;
       padding: 20px;
       text-align: center;
+      margin-top: auto;
     }
 
     footer a {
@@ -75,11 +54,24 @@
       margin: 5px;
       display: inline-block;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     footer a:hover {
       background: #38bdf8;
-      color: black;
+      color: #000;
+    }
+
+    /* PRINCIPAL */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      text-align: center;
+      font-size: 18px;
+      color: #0f172a;
     }
   </style>
 </head>
