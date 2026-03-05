@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Trimestre</title>
+  <title>Produtos Cadastrados</title>
 
   <style>
     * {
@@ -14,11 +13,15 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    /* FUNDO */
     body {
-      background: #f1f5f9;
+      background: #e0f7fa; /* azul claro */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    
+    /* CABEÇALHO */
     .header {
       position: sticky;
       top: 0;
@@ -48,14 +51,14 @@
       font-weight: bold;
     }
 
-  
-
+    /* CONTAINER DA TABELA */
     .container {
       max-width: 800px;
       margin: 40px auto;
       background: #fff;
       padding: 25px;
       border-radius: 10px;
+      flex: 1; /* Faz a tabela ocupar o espaço disponível */
     }
 
     h2 {
@@ -78,8 +81,30 @@
       background: #0f172a;
       color: #fff;
     }
- 
 
+    /* RODAPÉ */
+    footer {
+      background: #0f172a;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #1e293b;
+      color: #fff;
+      border-radius: 6px;
+      margin: 5px;
+      display: inline-block;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      background: #38bdf8;
+      color: #000;
+    }
   </style>
 </head>
 
@@ -87,15 +112,7 @@
 
 <header class="header">
   <h1><a href="../index.html">HOME</a></h1>
-
-  <nav>
-    <a href="trimestre1.html">I Trim.</a>
-    <a href="trimestre2.html">II Trim.</a>
-    <a href="trimestre3.html">III Trim.</a>
-  </nav>
 </header>
-
-<body>
 
 <div class="container">
   <h2>Produtos Cadastrados</h2>
@@ -111,6 +128,13 @@
     <tbody id="tabelaProdutos"></tbody>
   </table>
 </div>
+
+<!-- RODAPÉ COM TRIMESTRES -->
+<footer>
+  <a href="trimestre1.html">I </a>
+  <a href="trimestre2.html">II </a>
+  <a href="trimestre3.html">III </a>
+</footer>
 
 <script>
   const tabela = document.getElementById("tabelaProdutos");
@@ -131,5 +155,3 @@
 
 </body>
 </html>
-
-    
