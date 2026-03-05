@@ -13,11 +13,15 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    /* COR DO FUNDO */
     body {
-      background: #f1f5f9;
+      background: #e0f7fa;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    
+    /* HEADER */
     .header {
       position: sticky;
       top: 0;
@@ -33,11 +37,6 @@
       text-decoration: none;
     }
 
-    nav {
-      display: flex;
-      gap: 10px;
-    }
-
     nav a {
       text-decoration: none;
       padding: 8px 16px;
@@ -45,9 +44,43 @@
       color: #fff;
       border-radius: 6px;
       font-weight: bold;
+      margin-left: 5px;
     }
 
-  
+    nav a:hover {
+      background: #38bdf8;
+      color: black;
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    main {
+      flex: 1;
+      padding: 50px 25px;
+      text-align: center;
+    }
+
+    /* RODAPÉ COM TRIMESTRES */
+    footer {
+      background: #0f172a;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #1e293b;
+      color: #fff;
+      border-radius: 6px;
+      margin: 5px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      background: #38bdf8;
+      color: black;
+    }
   </style>
 </head>
 
@@ -55,15 +88,18 @@
 
 <header class="header">
   <h1><a href="../index.html">HOME</a></h1>
-
-  <nav>
-    <a href="trimestre1.html">I Trim.</a>
-    <a href="trimestre2.html">II Trim.</a>
-    <a href="trimestre3.html">III Trim.</a>
-  </nav>
 </header>
 
+<main>
+  <h2>Bem-vindo ao I Trimestre</h2>
+  <p>Aqui você pode colocar textos, listas, tabelas ou conteúdos do primeiro trimestre.</p>
+</main>
 
+<footer>
+  <a href="trimestre1.html">I</a>
+  <a href="trimestre2.html">II</a>
+  <a href="trimestre3.html">III</a>
+</footer>
 
 </body>
 </html>
