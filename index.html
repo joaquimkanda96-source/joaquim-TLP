@@ -1,191 +1,175 @@
+```html
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME - Trabalhos de Programação</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOME - Trabalhos de Programação</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<style>
 
-    body {
-      background: #f1f5f9;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
 
- 
-    .header {
-      position: sticky;
-      top: 0;
-      background: #0f172a;
-      padding: 15px 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-      flex-wrap: wrap;
-    }
+body{
+background:#f1f5f9;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
 
-    .header h1 a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 20px;
-    }
+/* HEADER */
 
-    .menu-toggle {
-      display: none;
-      font-size: 26px;
-      background: none;
-      border: none;
-      color: #fff;
-      cursor: pointer;
-    }
+.header{
+position:sticky;
+top:0;
+background:#0f172a;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-    nav {
-      display: flex;
-      gap: 10px;
-    }
+.header h1 a{
+color:#fff;
+text-decoration:none;
+font-size:20px;
+}
 
-    nav a {
-      text-decoration: none;
-      padding: 8px 16px;
-      background: #1e293b;
-      color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+/* MAIN */
 
-    nav a:hover {
-      background: #38bdf8;
-      color: #000;
-    }
+main{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+padding:40px;
+flex-wrap:wrap;
+}
 
- 
-    main {
-      padding: 40px;
-      display: flex;
-      gap: 40px;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+/* SOBRE */
 
- 
-    .sobre {
-      flex: 1;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+.sobre{
+width:350px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
 
-    .sobre h1 {
-      margin-bottom: 20px;
-      color: #0f172a;
-    }
+.sobre h1{
+margin-bottom:20px;
+color:#0f172a;
+}
 
-    .sobre p {
-      margin-bottom: 15px;
-      line-height: 1.6;
-      color: #1e293b;
-    }
+.sobre p{
+line-height:1.6;
+color:#1e293b;
+}
 
-  
-    .trimestres {
-      width: 100%;
-      max-width: 350px;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+/* TRIMESTRES */
 
-    .trimestres h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #0f172a;
-    }
+.trimestres{
+width:350px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
 
-    .trimestres a {
-      display: block;
-      margin-bottom: 15px;
-      padding: 15px;
-      text-align: center;
-      background: #0f172a;
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
+.trimestres h2{
+text-align:center;
+margin-bottom:20px;
+}
 
-    .trimestres a:hover {
-      background: #38bdf8;
-      color: #000;
-    }
+.trimestres a{
+display:block;
+margin-bottom:15px;
+padding:15px;
+text-align:center;
+background:#0f172a;
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+border-radius:8px;
+transition:0.3s;
+}
 
-     
-    @media (max-width: 768px) {
-      
+.trimestres a:hover{
+background:#38bdf8;
+color:black;
+}
 
+/* FOOTER */
 
-      main {
-        flex-direction: column;
-      }
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+}
 
-      .trimestres {
-        max-width: 100%;
-      }
-    }
-  </style>
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+main{
+flex-direction:column;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header class="header">
-  <h1><a href="index.html">HOME</a></h1>
-  <button class="menu-toggle">☰</button>
-  
+<h1><a href="index.html">HOME</a></h1>
 </header>
 
 <main>
- 
-  <div class="sobre">
-    <h1>SEJA BEM-VINDO AO MEU SITE</h1>
 
-    <p>
-      <strong>Nome:</strong> JOAQUIM KANDA <br>
-      <strong>Nº:</strong> 06 <br>
-      <strong>Sala:</strong> 18 <br>
-      <strong>Turma:</strong> BNI12° <br>
-      <strong>Turno:</strong> Noite <br>
-      <strong>Classe:</strong> 12ª
-    </p>
+<div class="sobre">
+<h1>SEJA BEM-VINDO AO MEU SITE</h1>
 
-  </div>
+<p>
+<strong>Nome:</strong> JOAQUIM KANDA <br>
+<strong>Nº:</strong> 06 <br>
+<strong>Sala:</strong> 18 <br>
+<strong>Turma:</strong> BNI12° <br>
+<strong>Turno:</strong> Noite <br>
+<strong>Classe:</strong> 12ª
+</p>
 
- 
-  <div class="trimestres">
-   
-    <a href="pag/trimestre1.html">I Trimestre</a>
-    <a href="pag/trimestre2.html">II Trimestre</a>
-    <a href="pag/trimestre3.html">III Trimestre</a>
-  </div>
+</div>
+
+<div class="trimestres">
+
+<h2>TRIMESTRES</h2>
+
+<a href="pag/trimestre1.html">I Trimestre</a>
+<a href="pag/trimestre2.html">II Trimestre</a>
+<a href="pag/trimestre3.html">III Trimestre</a>
+
+</div>
+
 </main>
 
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const menu = document.getElementById('menu');
+<footer>
 
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
-</script>
+<p>© 2026 - Trabalhos de Programação</p>
+<p>Aluno: Joaquim Kanda | 12ª Classe | BNI12</p>
+
+</footer>
 
 </body>
 </html>
+```
