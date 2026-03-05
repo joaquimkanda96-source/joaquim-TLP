@@ -1,151 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Trimestre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Trimestre</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<style>
 
-    body {
-      background: #f1f5f9;
-    }
-
-    
-    .header {
-      position: sticky;
-      top: 0;
-      background: #0f172a;
-      padding: 15px 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .header h1 a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    nav {
-      display: flex;
-      gap: 10px;
-    }
-
-    nav a {
-      text-decoration: none;
-      padding: 8px 16px;
-      background: #1e293b;
-      color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    
-
-  
-body{
-    margin:0;
-    font-family:Arial;
-    background:#ddd;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
 }
 
+/* COR DO FUNDO ALTERADA */
+body{
+background:#e0f2fe;
+}
+
+/* HEADER */
+
+.header{
+position:sticky;
+top:0;
+background:#0f172a;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.header h1 a{
+color:#fff;
+text-decoration:none;
+}
+
+/* CONTAINER */
+
 .container{
-    width:90%;
-    margin:auto;
+width:90%;
+margin:auto;
 }
 
 .menu{
-    background:#8BC34A;
-    text-align:center;
-    padding:20px;
-    font-weight:bold;
-    font-size:20px;
+background:#8BC34A;
+text-align:center;
+padding:20px;
+font-weight:bold;
+font-size:20px;
+margin-top:10px;
 }
 
 .sidebar{
-    background:#8BC34A;
-    text-align:center;
-    padding:50px;
-    margin-top:5px;
-    font-weight:bold;
+background:#8BC34A;
+text-align:center;
+padding:50px;
+margin-top:5px;
+font-weight:bold;
 }
 
 .fotos{
-    display:flex;
-    justify-content:space-around;
-    margin:30px 0;
+display:flex;
+justify-content:space-around;
+margin:30px 0;
 }
 
 .foto{
-    width:150px;
-    height:150px;
-    background:#8BC34A;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:bold;
+width:150px;
+height:150px;
+background:#8BC34A;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
 }
 
 .textos{
-    display:flex;
-    justify-content:space-between;
+display:flex;
+justify-content:space-between;
 }
 
 .texto{
-    width:48%;
-    background:#8BC34A;
-    padding:40px;
-    text-align:center;
-    font-weight:bold;
+width:48%;
+background:#8BC34A;
+padding:40px;
+text-align:center;
+font-weight:bold;
 }
 
-.footer{
-    background:#8BC34A;
-    text-align:center;
-    padding:20px;
-    margin-top:20px;
-    font-weight:bold;
+/* RODAPÉ */
+
+footer{
+background:#0f172a;
+text-align:center;
+padding:25px;
+margin-top:20px;
 }
-    
-  </style>
+
+footer a{
+text-decoration:none;
+padding:10px 20px;
+background:#1e293b;
+color:white;
+border-radius:6px;
+margin:5px;
+display:inline-block;
+font-weight:bold;
+}
+
+footer a:hover{
+background:#38bdf8;
+color:black;
+}
+
+</style>
 </head>
 
 <body>
 
 <header class="header">
-  <h1><a href="../index.html">HOME</a></h1>
-
-  <nav>
-    <a href="trimestre1.html">I Trim.</a>
-    <a href="trimestre2.html">II Trim.</a>
-    <a href="trimestre3.html">III Trim.</a>
-  </nav>
+<h1><a href="../index.html">HOME</a></h1>
 </header>
 
 <div class="menu">MENU</div>
 
-    <div class="sidebar">SIDE BAR</div>
+<div class="sidebar">SIDE BAR</div>
 
-    <div class="fotos">
-        <div class="foto">FOTO</div>
-        <div class="foto">FOTO</div>
-        <div class="foto">FOTO</div>
-    </div>
+<div class="fotos">
+<div class="foto">FOTO</div>
+<div class="foto">FOTO</div>
+<div class="foto">FOTO</div>
+</div>
 
-    <div class="textos">
-        <div class="texto">TEXTO</div>
-        <div class="texto">TEXTO</div>
-    </div>
+<div class="textos">
+<div class="texto">TEXTO</div>
+<div class="texto">TEXTO</div>
+</div>
 
-    <div class="footer">FOOTER</div>
+<!-- RODAPÉ COM OS TRIMESTRES -->
 
-   
+<footer>
+
+<a href="trimestre1.html">I</a>
+<a href="trimestre2.html">II</a>
+<a href="trimestre3.html">III</a>
+
+</footer>
 
 </body>
 </html>
