@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -15,10 +14,13 @@
     }
 
     body {
-      background: #f1f5f9;
+      background: #e0f7fa; /* Fundo azul claro */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
- 
+    /* CABEÇALHO */
     .header {
       position: sticky;
       top: 0;
@@ -27,6 +29,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      z-index: 1000;
     }
 
     .header h1 a {
@@ -48,7 +51,7 @@
       font-weight: bold;
     }
 
- 
+    /* CONTEÚDO */
     .conteudo {
       max-width: 900px;
       margin: 40px auto;
@@ -58,6 +61,7 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
+      flex: 1;
     }
 
     img, video, audio {
@@ -70,7 +74,6 @@
       color: #0f172a;
     }
 
- 
     label {
       font-weight: bold;
     }
@@ -91,7 +94,6 @@
       cursor: pointer;
     }
 
-     
     table {
       width: 100%;
       border-collapse: collapse;
@@ -107,6 +109,30 @@
       background: #0f172a;
       color: #fff;
     }
+
+    /* RODAPÉ */
+    footer {
+      background: #0f172a;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #1e293b;
+      color: #fff;
+      border-radius: 6px;
+      margin: 5px;
+      display: inline-block;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      background: #38bdf8;
+      color: #000;
+    }
   </style>
 </head>
 
@@ -116,9 +142,9 @@
   <h1><a href="../index.html">HOME</a></h1>
 
   <nav>
-    <a href="trimestre1.html">I Trim.</a>
-    <a href="trimestre2.html">II Trim.</a>
-    <a href="trimestre3.html">III Trim.</a>
+    <a href="trimestre1.html">I </a>
+    <a href="trimestre2.html">II </a>
+    <a href="trimestre3.html">III </a>
   </nav>
 </header>
 
@@ -163,6 +189,13 @@
   </table>
 
 </div>
+
+<!-- RODAPÉ COM TRIMESTRES -->
+<footer>
+  <a href="trimestre1.html">I Trim.</a>
+  <a href="trimestre2.html">II Trim.</a>
+  <a href="trimestre3.html">III Trim.</a>
+</footer>
 
 <script>
   const form = document.getElementById("formProduto");
