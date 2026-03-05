@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Trimestre</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #e90624;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    .header {
+      background: #075ad6;
+      padding: 15px 25px;
+      text-align: center;
+    }
+
+    .header h1 a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /* MAIN CENTRALIZADO */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .trimestre-box {
+      background: #dd1212;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .trimestre-box h2 {
+      margin-bottom: 25px;
+      color: #ffffff;
+    }
+
+    .trabalhos {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .trabalhos a {
+      padding: 15px 20px;
+      background: #0f172a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .trabalhos a:hover {
+      background: #38bdf8;
+      color: #000;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #075ad6;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .footer a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #1e293b;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .footer a:hover {
+      background: #38bdf8;
+      color: #000;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1><a href="../index.html">HOME</a></h1>
+  </header>
+
+  <!-- CONTEÚDO CENTRAL -->
+  <main>
+    <div class="trimestre-box">
+      <h2>I Trimestre</h2>
+
+      <div class="trabalhos">
+        <a href="t1.html">T1</a>
+        <a href="t2.html">T2</a>
+        <a href="t3.html">T3</a>
+        <a href="t4.html">T4</a>
+        <a href="t5.html">T5</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    
+    <a href="../kz/trimestre1.html">I</a>
+    <a href="../kz/trimestre2.html">II</a>
+    <a href="../kz/trimestre3.html">III</a>
+  </footer>
+
+</body>
+</html>
