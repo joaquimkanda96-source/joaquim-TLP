@@ -6,82 +6,179 @@
 <title>I Trimestre</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-/* COR DO FUNDO */
-body {
-  background: #e0f2fe;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* FUNDO ALTERADO */
+body{
+background:#e0f2fe;
 }
 
-/* HEADER */
+/* MENU SUPERIOR */
 .header{
-  position: sticky;
-  top: 0;
-  background: #0f172a;
-  padding: 15px 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+position:sticky;
+top:0;
+background:#0f172a;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .header h1 a{
-  color: #fff;
-  text-decoration: none;
+color:#fff;
+text-decoration:none;
 }
 
-/* MENU NO HEADER */
+nav{
+display:flex;
+gap:10px;
+}
+
 nav a{
-  text-decoration: none;
-  padding: 8px 16px;
-  background: #1e293b;
-  color: #fff;
-  border-radius: 6px;
-  font-weight: bold;
-  margin-left: 5px;
+text-decoration:none;
+padding:8px 16px;
+background:#1e293b;
+color:#fff;
+border-radius:6px;
+font-weight:bold;
 }
 
-nav a:hover{
-  background: #38bdf8;
-  color: #000;
-}
-
-/* CONTEÚDO PRINCIPAL */
+/* CONTEÚDO */
 main{
-  flex: 1;
-  max-width: 1100px;
-  margin: 30px auto;
-  padding: 20px;
+padding:80px 20px;
+display:flex;
+justify-content:center;
+}
+
+.tarefa{
+background:#ffffff;
+max-width:800px;
+width:100%;
+padding:50px 40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+text-align:justify;
+}
+
+.tarefa h2{
+color:#b45309;
+margin-bottom:20px;
+}
+
+/* MENU EXEMPLO */
+.menu{
+background:#8BC34A;
+text-align:center;
+padding:20px;
+font-weight:bold;
+font-size:20px;
+}
+
+.sidebar{
+background:#8BC34A;
+text-align:center;
+padding:50px;
+margin-top:5px;
+font-weight:bold;
+}
+
+.fotos{
+display:flex;
+justify-content:space-around;
+margin:30px 0;
+}
+
+.foto{
+width:150px;
+height:150px;
+background:#8BC34A;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+}
+
+.textos{
+display:flex;
+justify-content:space-between;
+}
+
+.texto{
+width:48%;
+background:#8BC34A;
+padding:40px;
+text-align:center;
+font-weight:bold;
+}
+
+/* LISTAS */
+.listas{
+margin-top:30px;
+background:#ffffff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+ul{
+margin-left:25px;
+}
+
+ol{
+margin-left:25px;
+}
+
+/* TABELAS */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th{
+background:#0b28ce;
+color:#fff;
+padding:10px;
+}
+
+td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+tr:nth-child(even){
+background:#f1f5f9;
 }
 
 /* RODAPÉ */
 footer{
-  background: #0f172a;
-  padding: 25px;
-  text-align: center;
+background:#0f172a;
+padding:25px;
+text-align:center;
+margin-top:40px;
 }
 
 footer a{
-  text-decoration: none;
-  padding: 10px 20px;
-  background: #1e293b;
-  color: white;
-  border-radius: 6px;
-  margin: 5px;
-  display: inline-block;
-  font-weight: bold;
+text-decoration:none;
+padding:10px 20px;
+background:#1e293b;
+color:#fff;
+border-radius:6px;
+margin:5px;
+font-weight:bold;
+display:inline-block;
 }
 
 footer a:hover{
-  background: #38bdf8;
-  color: black;
+background:#38bdf8;
+color:#000;
 }
 
 </style>
@@ -90,16 +187,58 @@ footer a:hover{
 <body>
 
 <header class="header">
-  <h1><a href="../index.html">HOME</a></h1>
+
+<h1><a href="../index.html">HOME</a></h1>
+
+<nav>
+<a href="trimestre1.html">I</a>
+<a href="trimestre2.html">II</a>
+<a href="trimestre3.html">III</a>
+</nav>
+
 </header>
 
+
+<main>
+
+<div class="tarefa">
+
+<h2>O CSS</h2>
+
+<p><strong>O que é CSS?</strong></p>
+
+<p>
+CSS significa Cascading Style Sheets.
+É uma linguagem usada para estilizar páginas web.
+Enquanto o HTML cria a estrutura da página,
+o CSS define a aparência visual.
+</p>
+
+<br>
+
+<p><strong>Exemplos do que o CSS faz:</strong></p>
+
+<ul>
+<li>Mudar cores dos textos</li>
+<li>Alterar tamanho das letras</li>
+<li>Definir cores de fundo</li>
+<li>Posicionar elementos na página</li>
+</ul>
+
+</div>
+
+</main>
+
+
 <!-- RODAPÉ COM TRIMESTRES -->
+
 <footer>
-  <a href="trimestre1.html">I</a>
-  <a href="trimestre2.html">II</a>
-  <a href="trimestre3.html">III</a>
+
+<a href="trimestre1.html">I Trimestre</a>
+<a href="trimestre2.html">II Trimestre</a>
+<a href="trimestre3.html">III Trimestre</a>
+
 </footer>
 
 </body>
 </html>
-
